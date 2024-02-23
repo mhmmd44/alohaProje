@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+/* navbar */
+.container {
+  width: 100%;
+  height: 145px;
+}
+.navlinks {
+  width: 100%;
+  height: 100%;
+}
+.imgBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.imgBox img {
+  width: 100%;
+  height: 100%;
+}
+.navLinkItems {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navLinkItem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navLinkItem ul li a {
+  font-family: Vag, sans-serif;
+  font-size: 17px !important;
+  font-weight: 400;
+  word-spacing: 0px;
+  color: #06514d;
+}
+.navLinkItem ul li a:hover {
+  color: orange;
+}
+.navTel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #00524d;
+  font-size: 17px;
+  font-weight: 700;
+  gap: 5px;
+}
+.barBox a {
+  width: 100%;
+  height: 1005;
+  display: flex;
+  text-decoration: none;
+  gap: 10px;
+}
+.barContent {
+  color: #00524d;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+.barBoxContent a {
+  text-decoration: none !important;
+  color: #00524d;
+}
+
+.imgBox .navTel img {
+  width: 20%;
+  height: 25%;
+  color: #00524d;
+}
+/* section firstSlide*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 50%;
+  border: solid 2px white !important;
+}
+
+/* section swiperslide */
+.secondSlide {
+  display: flex;
+  margin: 5% 0;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel1 {
+  display: flex;
+  gap: 20px;
+  animation: scrollAnimation 20s linear infinite;
+}
+
+.carousel1:hover {
+  animation-play-state: paused;
+}
+
+.carousel1 div {
+  flex: 0 0 33.33%;
+  box-sizing: border-box;
+}
+
+.secondSlideLink {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.secondSlideLink:hover {
+  transform: scale(1.2);
+}
+
+.secondSlideLink img {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-33.33%);
+  }
+  50% {
+    transform: translateX(-66.66%);
+  }
+  75% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* section mobileCAr */
+.mobileCar {
+  width: 100%;
+  min-height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.mobileCarBg {
+  width: 100%;
+  height: 250px;
+  max-height: 250px;
+  display: flex;
+  margin: 5% 0;
+  background: #dd8c33;
+}
+.mobileCarLeft {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 2%;
+}
+.mobileCarTitle{
+    color: white;
+    font-size: 40px !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+}
+.mobileCarLink {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.mobileCarLink span,.mobileCarLink span a{
+    font-size: 22px;
+    color: white;
+}
+
+.mobileCarRight {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 2%;
+  }
+  .mobileCar-ImgBox{
+    display: flex;
+  }
+  .mobileCar-ImgBox img{
+    width: 100%;
+    height: 85%;
+}
+
+/* section konsept */
+    /* Kapsayıcı div */
+    .container3 {
+        background-image: url('/images/konseptImg/kiosk-4.jpg'); /* Arka plan resmi dosya yolunu belirtin */
+        background-size: cover; /* Resmin boyutunu kapsayıcı div'e uyacak şekilde ayarlar */
+        background-position: center; /* Resmi ortalar */
+        height: 370px; /* veya istediğiniz başka bir yükseklik değeri */
+        position: relative;
+      }
+  
+      /* İçteki div */
+      .inner {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 255, 0, 0.5); /* Yeşil ve yarı saydam arka plan */
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      /* İçteki div içindeki içerik (isteğe bağlı) */
+      .content {
+        color: white;
+        text-align: center;
+      }
