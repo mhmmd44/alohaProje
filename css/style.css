@@ -454,11 +454,39 @@ text-align: left;
  color: #dd8c33;
   
 }
+
 .footerBtn{
-  color: white;
-  margin-left: -40%;
-  font-size: 20px;
-  background-color: #dd8c33;
-  max-height: 45px;
+  width: 150px;
   height: 45px;
+  max-height: 45px;
+  display: flex;
+  justify-content: center;
+  margin-left: 15%;
+  font-size: 20px;
+  color: white;
+  background-color: #dd8c33;
+}
+.downloadApp{
+  display: block;
+  position: relative;
+}
+.downloadApp .appLinks{
+  display: flex;
+  margin-left: 15%;
+  gap: 10px;
+}
+.downloadApp span{
+  color: #dd8c33;
+  position: relative;
+  display: flex; 
+  margin-top: 3%; 
+  margin-left: 30%;
+  font-weight: 700;
+}
+.callCenter{
+  display: flex;
+  margin-top: 10%;
+}
+.callCenter img{
+  margin-left: 15%;
 }
