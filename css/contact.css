@@ -58,6 +58,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    margin-left: 20%;
   }
   .coffee-area{
     display: flex;
@@ -239,6 +240,9 @@
         left: 30%;
         transition: 1s ease;
     }
+    .coffee-area {
+      margin-left: 1%;
+    }
     .mapAdressContainer iframe{
         width: 90%;
         height: 400px;
@@ -267,5 +271,7 @@
         width: 100%;
         transition: 1s ease;
     }
-
+    .coffee-area {
+      margin-left: 15%;
+    }
 }

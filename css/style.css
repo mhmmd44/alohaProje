@@ -19,6 +19,7 @@
   object-fit: cover;
 }
 .imgBox img {
+  transform: scale(1.5);
   width: 100%;
   height: 100%;
 }
@@ -76,8 +77,8 @@
 }
 
 .imgBox .navTel img {
-  width: 20%;
-  height: 25%;
+  width: 10%;
+  height: 45%;
   color: #00524d;
 }
 /* section firstSlide*/
@@ -241,7 +242,6 @@
   flex-wrap: wrap;
 }
 .konseptContent1 {
-  max-width: 30%;
   overflow: hidden;
 }
 .backgroundBox {
@@ -367,7 +367,7 @@ form h5 {
 form p {
   color: red;
 }
-.form-group input{
+.form-group input {
   border: none !important;
   border-bottom: solid 1px !important;
   transition: 1s ease;
@@ -384,15 +384,15 @@ footer .row {
 }
 .socialMediaTitle {
   display: flex;
-text-align: left;
+  text-align: left;
   margin-left: 16%;
   margin-bottom: 3%;
 }
-.socialMediaTitle h3{
-display: flex;
-text-align: left;
+.socialMediaTitle h3 {
+  display: flex;
+  text-align: left;
 }
-.footer .row .col-4 .socialMediaLinks{
+.footer .row .col-4 .socialMediaLinks {
   display: flex;
   flex-direction: start;
   padding-left: 14%;
@@ -400,9 +400,8 @@ text-align: left;
 
 .footer .row .col-4 .socialMediaLinks a {
   display: inline-block;
-  height: 50px;
+  height: 34px;
   width: 50px;
-  background-color: rgba(255, 255, 255, 0.2);
   margin: 0 10px 10px 0;
   text-align: center;
   line-height: 30px;
@@ -445,22 +444,21 @@ text-align: left;
   color: white;
   text-align: left;
 }
-.footerLinks ul li{
+.footerLinks ul li {
   list-style: none;
   text-align: left;
   margin-left: 11%;
 }
-.footerLinks ul li a{
+.footerLinks ul li a {
   text-decoration: none;
   color: white;
   line-height: 30px;
 }
-.footerLinks ul li a:hover{
- color: #dd8c33;
-  
+.footerLinks ul li a:hover {
+  color: #dd8c33;
 }
 
-.footerBtn{
+.footerBtn {
   width: 150px;
   height: 45px;
   max-height: 45px;
@@ -471,27 +469,140 @@ text-align: left;
   color: white;
   background-color: #dd8c33;
 }
-.downloadApp{
+.downloadApp {
   display: block;
   position: relative;
 }
-.downloadApp .appLinks{
+.downloadApp .appLinks {
   display: flex;
   margin-left: 15%;
   gap: 10px;
 }
-.downloadApp span{
+.downloadApp span {
   color: #dd8c33;
   position: relative;
-  display: flex; 
-  margin-top: 3%; 
+  display: flex;
+  margin-top: 3%;
   margin-left: 30%;
   font-weight: 700;
 }
-.callCenter{
+.callCenter {
   display: flex;
   margin-top: 10%;
 }
-.callCenter img{
+.callCenter img {
   margin-left: 15%;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1199px) {
+  .imgBox a img {
+    transform: scale(2.5);
+    margin-left: 145%;
+    transition: 1s ease-in-out;
+  }
+  .navNumber .imgBox {
+    display: none;
+  }
+  .navLinkItem ul {
+    display: none;
+    flex-direction: row;
+  }
+  .navLinkItem .imgBox a {
+    display: none;
+  }
+  .navNumberLink {
+    display: none;
+  }
+  .barBox {
+    margin-right: 10%;
+  }
+  footer {
+    margin-top: 25%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .imgBox {
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .imgBox a img {
+    transform: scale(4.5);
+    margin-left: 165%;
+  }
+  .barBox {
+    margin-right: 15%;
+  }
+  .downloadApp .appLinks a {
+    width: 80% !important;
+    object-fit: cover;
+  }
+  .downloadApp .appLinks a img {
+    width: 90%;
+    height: 40px;
+  }
+  footer {
+    margin-top: 35%;
+  }
+  .callCenter {
+    display: flex;
+    margin-top: 10%;
+  }
+  .callCenter img {
+    margin-left: 1%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 150px;
+  }
+  .imgBox {
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .imgBox a img {
+    transform: scale(4.5);
+    margin-left: 185%;
+  }
+  .downloadApp .appLinks {
+    display: flex;
+    margin-right: 15%;
+    gap: 10px;
+  }
+
+  .barBox {
+    margin-right: 5%;
+    transition: 1s ease-in-out;
+  }
+  .barBox a span {
+    display: none;
+  }
+  /* .barContent {
+    margin-left: -10%;
+  } */
+
+  .mobileCarTitle {
+    font-size: 25px !important;
+  }
+  .mobileCarLink span,
+  .mobileCarLink span a {
+    font-size: 14px !important;
+  }
+  footer {
+    margin-top: 55%;
+  }
+
+  .callCenter img {
+    width: 60%;
+  }
+  .footer .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  .footer .row .col-4 {
+    margin-left: 30%;
+    margin-bottom: 10%;
+  }
 }
