@@ -1,0 +1,271 @@
+.contactTitle{
+    width: 100%;
+    height: 150px;
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: #00524d;
+}
+.pagesLink{
+    display: flex;
+}
+.pagesLink ul{
+    display: flex;
+    margin-left: 15%;
+}
+.pagesLink ul li{
+    list-style: none;
+}
+.pagesLink ul li a{
+    text-decoration: none;
+    color: white;
+}
+.contactTitle h4{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 1% !important;
+    color: white;
+}
+.form .mt-5{
+    width: 50%;
+    height: 100%;
+    border: solid 1px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.form{
+    height: 600px;
+    display: flex;
+    margin: 0% 15%;
+    object-fit: cover;
+    overflow: hidden;
+    border-bottom: solid 1px;
+
+}
+.contactLeft{
+    width: 50%;
+    display: flex;
+    object-fit: cover;
+    overflow: hidden;
+}
+/* animasyon */
+
+.coffee-area {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .coffee-area{
+    display: flex;
+    justify-content: center;
+}
+  .machine {
+    width: 100%;
+    height: 10%;
+    border-radius:  0 0 15px 15px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+  }
+  .machine-circle {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    background-color: black;
+    border-radius: 0 0 30% 30%;
+  }
+  .coffee {
+    width: 100% !important;
+    position: relative;
+    display: block;
+    top: 250px;
+    left: -40%;
+    object-fit: cover;
+  }
+  .cup-box img{
+    width: 80%;
+}
+  .steam-box {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 10px;
+    top: 49px;
+    background-color: transparent;
+  }
+  .steam-1 {
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    margin: 0 20px 0 30px;
+    border-radius: 25px;
+    background-color: rgb(150, 150, 149);
+    opacity: 0;
+    animation: buhar 4s 1s infinite;
+  }
+  .steam-2 {
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    margin: 0 20px 0 60px;
+    border-radius: 25px;
+    background-color: rgb(150, 150, 149);
+    opacity: 0;
+    animation: buhar 4s 2s infinite;
+  }
+  .steam-3 {
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    margin: 0 20px 0 10px;
+    border-radius: 25px;
+    background-color: rgb(150, 150, 149);
+    opacity: 0;
+    animation: buhar 4s 4s infinite;
+  }
+ 
+  @keyframes buhar {
+    0% {
+      top: -40px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.50;
+  }
+    100% {
+      top: -200px;
+      opacity: 0.25   ;
+    }
+  }
+  .coffee-way {
+    width: 30px;
+    height: 150px;
+    background-color: black;
+    border-radius: 0 0 30% 30%;
+    display: flex;
+    justify-content: center;
+  }
+  .drink {
+    width: 9px;
+    height: 0px;
+    background-color: brown;
+    position: relative;
+    top: 150px;
+    border-radius: 0 0 40% 40%;
+    animation: coffee 4s linear infinite;
+  }
+  @keyframes coffee {
+    0% {
+      height: 0px;
+    }
+    25% {
+      height: 120px;
+    }
+    50% {
+      height: 120px;
+    }
+    75% {
+      height: 120px;
+    }
+    100% {
+      height: 120px;
+    }
+  }
+  .coffeTitle{
+    width: 12%;
+    object-fit: cover;
+    top: 50%;
+    left: 35%;
+    position: absolute;
+    transition: 1s ease;
+  }
+  .coffeTitle h5{
+    font-weight: 600;
+    color: #00524d;
+  }
+
+
+.contactRight{
+    width: 50%;
+    background-color: #00524d ;
+}
+.contactRight form input,h2{
+    color: white !important;
+    background-color: transparent ;
+    margin-top: 4%;
+}
+.contactRight form label{
+    background-color: transparent !important;
+    color: white;
+}
+
+/* map */
+.map{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 15%;
+}
+.map h5{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 2%;
+}
+.mapAdressContainer iframe{
+    width: 60%;
+    height: 500px;
+}
+  .mapAdress p{
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .mapAdress hr{
+    width: 60%;
+  }
+  .contactSocialMedia a img{
+    height: 50px !important;
+    margin-bottom: 2%;
+    border-radius: 50%;
+  }
+  .contactSocialMedia a img:hover{
+    background-color: #00524d;
+  }
+  @media only screen and (max-width: 1200px) {
+    .coffeTitle{
+        left: 30%;
+        transition: 1s ease;
+    }
+    .mapAdressContainer iframe{
+        width: 90%;
+        height: 400px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+
+    .mapAdressContainer iframe{
+        width: 90%;
+        height: 300px;
+    }
+    .form{
+        display: block;
+        height: auto;
+    }
+    .form .contactLeft{
+        width: 100%;
+        transition: 1s ease;
+        height: 400px;
+    }
+    .form .contactLeft .coffee-area .coffeTitle{
+        left: 55%;
+
+    }
+    .form .contactRight{
+        width: 100%;
+        transition: 1s ease;
+    }
+
+}
