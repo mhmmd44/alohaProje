@@ -13,16 +13,15 @@
 </head>
 
 <body>
-    <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <div class="row navlinks">
                 <div class="col-2 imgBox">
                     <a class="navbar-brand" href="#">
-                        <img src="/images/kahve-diyari.svg" alt="Bootstrap" >
+                        <img src="/images/kahve-diyari.svg" alt="Bootstrap" width="235" height="105">
                     </a>
                 </div>
-                <div class="col-2 bosCol"></div>
+                <div class="col-2"></div>
                 <div class="col-8 navLinkBox">
                     <div class="row navLinkItems">
                         <div class="col-7 navLinkItem">
@@ -45,14 +44,14 @@
                             </ul>
                         </div>
                         <div class="col-2 navLinkItem barBox">
-                            <a href=""  >
+                            <a href="" id="toggle-btn">
                                 <div class="barBoxContent">
                                     <img src="/images/menu.png" alt="">
                                 </div>
                                 <span class="barContent">MENÜ</span>
                             </a>
                         </div>
-                        <div class="col-2 navLinkItem navNumber">
+                        <div class="col-2 navLinkItem navNumberLink">
                             <div class="imgBox">
                                 <a class=" navTel" href="#">
                                     <span>444 23 45
@@ -72,6 +71,46 @@
             </div>
         </div>
     </nav>
+    <section class="navToggle" id="navToggle">
+        <div id="offcanvas-menu">
+            <div class="offcanvasHead">
+                <p class="offcanvasTitle">Kahve Diyarı</p>
+                <a href="#" id="close-btn">X</a>
+            </div>
+            <hr>
+            <ul>
+                <li><a href="#">Kurumsal</a></li>
+                <li><a href="#">Şubelerimiz</a></li>
+                <li><a href="#">Franchise</a></li>
+                <li><a href="#">Konseptler</a></li>
+                <li><a href="#">Menüler</a></li>
+                <li><a href="#">Haberler</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">İletişim</a></li>
+                <li><a href="#">Kariyer</a></li>
+            </ul>
+            <hr>
+            <div class="socialMediaLinks">
+                <a href="#">
+                    <img src="/images/footerIcon/facebook.png" alt="Social Media Icon 1">
+                </a>
+                <a href="#">
+                    <img src="/images/footerIcon/twitter.png" alt="Social Media Icon 2">
+                </a>
+                <a href="#">
+                    <img src="/images/footerIcon/instagram.png" alt="Social Media Icon 3">
+                </a>
+                <a href="#">
+                    <img src="/images/footerIcon/linkedin.png" alt="Social Media Icon 4">
+                </a>
+                <a href="#">
+                    <img src="/images/footerIcon/youtube.png" alt="Social Media Icon 3">
+                </a>
+            </div>        
+        </div>
+        <div id="overlay"></div>
+
+    </section>
     <!-- main -->
     <section class="contactTitle">
         <div class="pagesLink">

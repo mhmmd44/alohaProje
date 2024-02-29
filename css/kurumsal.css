@@ -1,0 +1,173 @@
+.kurumsalInfo {
+  width: 80%;
+  height: 400px;
+  margin: 0 10% 3% 10%;
+  display: flex;
+  object-fit: cover;
+  overflow: hidden;
+  background-color: #dd8c33;
+}
+.kurumsalInfoLeft,
+.kurumsalInfoRight {
+  width: 50%;
+  height: 400px;
+  padding: 5% 10% 10% 10%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.kurumsalInfoLeft p {
+  color: white;
+}
+.kurumsalInfoRight img {
+  width: 100%;
+  height: 100%;
+  padding: 5% 10% 0 1%;
+}
+/* about */
+.about {
+  width: 60%;
+  margin: 0% 15% 5% 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about h3 {
+  text-align: center;
+  color: #00524d;
+  font-weight: 700;
+}
+.about p {
+  text-align: center;
+  padding: 2%;
+}
+/* placeInfo */
+.placeInfo {
+  width: 60%;
+  height: 600px;
+  margin: 0% 15% 10% 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.placeInfoTop,
+.placeInfoDown {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.placeInfoTopLeft,
+.placeInfoDownRight {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  text-align: start;
+  background-color: transparent;
+}
+.placeInfoTopLeft h3,
+.placeInfoDownRight h3 {
+  border-bottom: solid 1px white;
+  border-bottom-width: 50%;
+}
+.placeInfoTopLeft {
+  background-color: #00524d;
+  color: white;
+}
+.placeInfoDownRight {
+  background-color: #dd8c33;
+  color: white;
+}
+.placeInfoTopRight,
+.placeInfoDownLeft {
+  width: 50%;
+  height: 80%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.placeInfoTopRight img,
+.placeInfoDownLeft img{
+  width: 100%;
+  height: 100%;
+}
+.placeInfoTopRight img:hover,
+.placeInfoDownLeft img:hover{
+  transform: scale(1.1);
+  transition: all 2s ease-in-out;
+}
+/* imgInfo */
+.imgInfo{
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.imgInfo img{
+    width: 100%;
+    height: 100%;
+}
+/* secondAbout */
+.secondAboutColor{
+    color: #dd8c33;
+    margin-bottom: -3%;
+    margin-top: -1%;
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+  .placeInfo {
+    width: 80%;
+    height: auto;
+    margin: 0% 10% 10% 10%;
+
+  }
+  .placeInfoTop {
+    flex-direction: column;
+  }
+  .placeInfoDown {
+    flex-direction: column-reverse;
+  }
+  .placeInfoTop,
+  .placeInfoDown  {
+    margin-bottom: 10%;
+
+  }
+
+  .placeInfoTopRight,
+  .placeInfoDownLeft,
+  .placeInfoTopLeft,
+  .placeInfoDownRight {
+    width: 100%;
+    height: auto;
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .kurumsalInfo {
+    display: block;
+    height: 700px;
+  }
+
+  .kurumsalInfoLeft,
+  .kurumsalInfoRight {
+    width: 100%;
+    height: 300px;
+    padding: 5% 10% 0 10%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .placeInfoTop,
+  .placeInfoDown  {
+    margin-right: 2%;
+  }
+}
