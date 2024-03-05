@@ -171,6 +171,6 @@ function performSearch() {
 // Display profile cards
 const profileCards = document.getElementById('profile-cards');
 branches.forEach(item => {
-  const card = `<div class="profile-card">${item.city.toLocaleUpperCase('tr-TR')} -  ${item.branch.toLocaleUpperCase('tr-TR')}.  ${item.number}</div>`;
+  const card = `<div class="profile-card">${item.city.toLocaleUpperCase('tr-TR')} -  ${item.branch.toLocaleUpperCase('tr-TR')} - ${item.number}</div>`;
   profileCards.innerHTML += card;
 });
