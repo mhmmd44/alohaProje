@@ -160,7 +160,7 @@ function performSearch() {
   const searchResults = branches.filter(item => item.city.toLocaleUpperCase('tr-TR') === searchTerm);
 
   if (searchResults.length > 0) {
-    const resultMessage = `${searchResults[0].city} şehrinde bulunan şubeler:<br>${searchResults.map(item => `-  ${item.branch}.${item.number}`).join('<br>')}`;
+    const resultMessage = `${searchResults[0].city} şehrinde bulunan şubeler:<br>${searchResults.map(item => `-  ${item.branch}-${item.number}`).join('<br>')}`;
     document.getElementById('search-results').innerHTML = `<p>${resultMessage}</p>`;
   } else {
     document.getElementById('search-results').innerHTML = "<p>Aradığınız şehir bulunamadı.</p>";
