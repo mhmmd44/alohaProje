@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
   
     toggleBtn.addEventListener('click', function (event) {
       event.preventDefault();
-      navToggle.style.display = 'block'; // Menüyü görünür yap
+      navToggle.style.display = 'block'; 
     });
   
     closeBtn.addEventListener('click', function () {
-      navToggle.style.display = 'none'; // Menüyü gizle
+      navToggle.style.display = 'none'; 
     });
 
   });
@@ -138,20 +138,19 @@ let branches = [
   { city: "VAN", branch: "ERCİŞ ", number: 302 },
   { city: "İSTANBUL", branch: "SİLİVRİ ", number: 302 },
   { city: "BURSA", branch: "DİKKALDIRIM ", number: 302 },
-  // Diğer şubeler buraya eklenebilir
 ];
 
-// Sort branches alphabetically by city and branch
+// alfabetik sıralama işlemi
 branches.sort((a, b) => (a.city + a.branch).localeCompare(b.city + b.branch));
 
-// Search functionality with Enter key
+// enter tuşu ile arama yapabilme
 document.getElementById('search-input').addEventListener('keyup', function (event) {
   if (event.key === 'Enter') {
     performSearch();
   }
 });
 
-// Search functionality with button click
+// buton ile arama yapabilme
 document.getElementById('search-button').addEventListener('click', function () {
   performSearch();
 });
@@ -168,7 +167,7 @@ function performSearch() {
   }
 }
 
-// Display profile cards
+// prfoile-card görünümü
 const profileCards = document.getElementById('profile-cards');
 branches.forEach(item => {
   const card = `<div class="profile-card">${item.city.toLocaleUpperCase('tr-TR')} -  ${item.branch.toLocaleUpperCase('tr-TR')} - ${item.number}</div>`;
